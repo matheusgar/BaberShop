@@ -1,0 +1,421 @@
+
+:root{
+	--color-primary:#917758;
+	--color-secundary:#3c2915;
+	--color-primary-light:#f5eee6;
+}
+*{
+
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.container-about{
+	width:1150px;
+	margin:0 auto;
+	
+}
+
+.home{
+	position:relative;
+	height: 100vh;
+	background-image:url("../images/bg-home.jpg");
+	background-attachment: fixed;
+	background-size:cover;
+}
+.home .header{
+	padding:30px 0;
+}
+
+.home .header .nav{
+	display:flex;
+	justify-content: center;
+}
+
+.home .header .nav ul{
+	display:flex;
+}
+
+.home .header .nav ul li{
+	display:flex;
+	align-items:center;
+	width:150px;
+	justify-content: center;
+}
+
+.home .header .nav ul li a{
+	text-decoration:none;
+	color:white;
+	font-weight: bold;
+	font-size:12px;
+	text-transform: uppercase;
+	padding:20px;
+}
+.home .header .nav ul li a:hover{
+	color:var(--color-primary);
+	border-bottom:1px solid var(--color-primary);
+}
+
+.logo{
+	margin:0 30px;
+}
+
+
+.home .banner{
+	position: absolute;
+    text-align: center;
+    color: white;
+    left: 50%;
+    width: 590px;
+    height: 240px;
+    top: 50%;
+    margin-top: -80px;
+    margin-left: -295px;
+	
+}
+
+
+.home .banner span{
+	display:block;
+}
+
+.home .banner .a{
+	text-transform: uppercase;
+	color:var(--color-primary);
+	letter-spacing:4px;
+
+}
+
+.b{
+	margin-bottom:20px;
+}
+
+.home .banner h1{
+	font-size:100px;
+}
+
+/************
+	ABOUT
+*************/
+
+.about{
+
+	background: var(--color-primary);
+}
+
+.about .container-about{
+	display:flex;
+}
+
+.about .timing{
+	position: relative;
+	top:-50px;
+	width:33%;
+	background: url(../images/brush-big.jpg);
+	padding:20px;
+}
+
+.about .timing .overlay{
+	padding:20px;
+	background: brown;
+	text-align:center;
+	opacity: 0.8;
+}
+
+.about .timing h3{
+	color:var(--color-primary);
+	font-size:30px;
+	width:fit-content;
+	margin:0 auto 30px auto;
+	border-bottom:1px solid var(--color-primary);
+
+}
+.about .timing .logo-icon{
+	width:50px;
+}
+.about .timing .text h4{
+	color:gray;
+	font-size:15px;
+	font-weight:400;
+}
+.about .timing .text:after{
+	color:white;
+	font-size:25px;
+	margin-top:10px;
+	content:'•';
+	display:block;
+}
+.about .timing .text:last-of-type:after{
+	content:'|';
+}
+.about .timing .text{
+	margin:10px 0;
+}
+.about .timing span{
+	color:white;
+	font-size:15px;
+	display:block;
+	
+}
+
+.about .experience{
+	color:white;
+	margin:0 7%;
+	margin-top:30px;
+	width:66%;
+}
+.experience h2{
+	font-size:40px;
+	font-weight: 400;
+}
+
+.experience h2:after{
+	display: block;
+	content:'';
+	width:100px;
+	height: 3px;
+	background-color:#a38f78;
+	margin:30px 0;
+}
+.experience .text{
+	display: flex;
+	justify-content: space-between;
+}
+
+.experience .text p{
+	margin-bottom:20px;
+	font-weight: 400;
+	font-size:17px;
+}
+
+
+
+/************
+	Services
+*************/
+
+.servicos{
+	background-color: var(--color-primary-light);
+	padding:80px 0;
+	text-align: center;
+}
+
+.servicos h2{
+	color:var(--color-secundary);
+	font-size:50px;
+	font-weight: 400;
+}
+
+
+.servicos .boxes{
+	display:flex;
+	justify-content: space-between;
+	margin-top:50px;
+}
+
+
+.servicos .box{
+	padding:40px 30px;
+	border:3px solid var(--color-primary);
+	margin:30px;
+}
+.servicos .box h4{
+	margin-top:20px;
+	color:var(--color-secundary);
+}
+
+.servicos .boxes .box p{
+	margin-top:20px;
+	font-size:14px;
+	line-height: 25px;
+}
+
+/******************
+	Agendamento
+*******************/
+
+.agenda{
+	background-image:url("../images/chair-ic.png");
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	background-size:300px;
+	background-color: var(--color-primary);
+	height: 100vh;
+	padding:100px 0;
+}
+
+.agenda h2{
+	color:var(--color-primary-light);
+	font-size:50px;
+	font-weight: 400;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.agenda img{
+	margin:0 auto;
+	display:block;
+}
+.agenda .form{
+	margin-top:80px;
+}
+.agenda .form .cont-input{
+	display:flex;
+	justify-content: space-between;
+	margin-bottom:30px;
+}
+
+.agenda .inputWapper{
+	width:100%;
+	margin-right:40px;
+
+}
+
+.agenda .inputWapper:last-of-type{
+	margin-right: 0;
+
+}
+.agenda .form input,
+.agenda .form select,
+.agenda textarea{
+	border-radius:3px;
+	width:100%;
+	padding:10px;
+	border:none;
+	outline:none;
+}
+.agenda textarea{
+	height:100px;
+}
+.agenda label{
+	margin-bottom:2px;
+	font-size:14px;
+	color:var(--color-primary-light);
+	display:block;
+}
+.agenda button{
+	background-color: var(--color-secundary);
+	color:white;
+	border-radius:3px;
+	padding:15px 40px;
+	border:none;
+	margin-top:10px;
+	text-transform: uppercase;
+}
+
+
+/***********************
+	Galeria de Fotos
+************************/
+
+.gallery{
+	
+	background-color: var(--color-primary-light);
+	padding:100px 0;
+
+}
+
+.gallery h2{
+	color:var(--color-primary);
+	font-size:50px;
+	font-weight: 400;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.gallery img{
+	margin:0 auto;
+	display:block;
+}
+
+
+.gallery .gallery-post{
+	margin:50px auto;
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	height: 100vh;
+	width:890px;
+}
+
+.gallery .gallery-post div{
+	margin:6px;
+	border:10px solid var(--color-primary);
+	width:33%;
+}
+
+.gallery .gallery-post div img{
+	width:100%;
+}
+
+/******************
+	Localização
+******************/
+
+.localizacao{
+	background-image:url(../images/bg-location.jpg);
+	background-size:cover;
+	padding: 100px 0;
+}
+
+.localizacao .head{
+	width:100%;
+	background-color: #191919;
+	padding:40px;
+}
+
+.localizacao .head .cont{
+	display: flex;
+	justify-content: space-between;
+}
+.localizacao .cont .img{
+	display:flex;
+	border:1px solid var(--color-primary);
+	border-radius:100%;
+	padding:20px;
+	margin-right:10px;
+	justify-content: center;
+	height: 40px;
+	width:40px;
+	align-items:center;
+}
+.localizacao .cont .cont-nav{
+	display:flex;
+}
+
+.localizacao .cont-nav .text span:first-child{
+	display: block;
+	color:silver;
+	font-size:11px;
+}
+
+.localizacao .cont-nav .text span:last-child{
+	color:white;
+	font-size:13px;
+}
+
+.localizacao .map{
+	width:100%;
+}
+
+.localizacao .map iframe{
+	width: 100%;
+}
+
+
+/**************
+	footer
+**************/
+
+.footer{
+	width:100%;
+	padding:40px;
+	background-color: black;
+	color:white;
+	text-align:center;
+}
